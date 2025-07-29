@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(58, 58, 58);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+}
+
+.container {
+    width: auto;
+    height: auto;
+    background: rgb(138, 138, 138);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search input {
+    padding: 15px 30px;
+    width: 16rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.518);
+}
+.searchbtn{
+    background-color: rgba(255, 255, 255, 0.518);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.searchbtn img {
+    width: 20px;
+}
+button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.518);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.741);
+}
+.weatherimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather img{
+    width: 150px;
+    margin-top: 3rem;
+}
+.temp{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.cityname{
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.col1{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.col1 img{
+    width: 30px;
+}
+.humdiv{
+    margin-left: 10px;
+}
+p{
+    color: white;
+    font-weight: lighter;
+}
+.windiv{
+    margin-left: 10px;
+}
