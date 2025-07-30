@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(0, 0, 98);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ body {
 .container {
     width: auto;
     height: auto;
-    background: rgb(138, 138, 138);
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     border-radius: 20px;
     padding: 20px;
 }
@@ -28,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    position: relative;
 }
 
 .search input {
@@ -36,10 +37,11 @@ body {
     border-radius: 50px;
     border: none;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.518);
+    background-color: white;
 }
-.searchbtn{
-    background-color: rgba(255, 255, 255, 0.518);
+
+.searchbtn {
+    background-color: white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -49,10 +51,12 @@ body {
     margin-left: 5px;
     cursor: pointer;
 }
+
 .searchbtn img {
     width: 20px;
 }
-button{
+
+button {
     border: none;
     background-color: rgba(255, 255, 255, 0.518);
     border-radius: 50%;
@@ -60,19 +64,23 @@ button{
     height: 40px;
     cursor: pointer;
 }
-button:hover{
-    background-color: rgba(255, 255, 255, 0.741);
+
+.weather {
+    display: none;
 }
-.weatherimg{
+
+.weatherimg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.weather img{
+
+.weather img {
     width: 150px;
     margin-top: 3rem;
 }
-.temp{
+
+.temp {
     color: white;
     font-size: 3rem;
     font-weight: 500;
@@ -81,7 +89,8 @@ button:hover{
     align-items: center;
     margin-bottom: 5px;
 }
-.cityname{
+
+.cityname {
     color: white;
     font-size: 35px;
     font-weight: lighter;
@@ -89,27 +98,41 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
-.details{
+
+.details {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
 }
-.col1{
+
+.col1 {
     display: flex;
     justify-content: center;
     align-items: end;
 }
-.col1 img{
+
+.col1 img {
     width: 30px;
 }
-.humdiv{
+
+.humdiv {
     margin-left: 10px;
 }
-p{
+
+p {
     color: white;
     font-weight: lighter;
 }
-.windiv{
+
+.windiv {
     margin-left: 10px;
+}
+
+.errormsg {
+    color: red;
+    margin-top: 5px;
+    font-weight: 100;
+    display: none;
+    margin-left: 10px; ;
 }
