@@ -18,7 +18,7 @@ async function weathercheck(city) {
 
         setTimeout(() => {
             errormsg.style.display = "none";
-        }, 10000);
+        }, 5000);
 
     } else {
         let data = await response.json();
